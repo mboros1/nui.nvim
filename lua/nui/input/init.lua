@@ -160,8 +160,8 @@ function Input:unmount()
     if pending_submit_value then
       self._.pending_submit_value = nil
       self._.on_submit(pending_submit_value)
-    else
-      self._.on_close()
+      -- else
+      --   self._.on_close()
     end
     self._.loading = false
   end)
